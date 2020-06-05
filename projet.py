@@ -4,9 +4,9 @@
 import requests
 import json
 import random
-from flask import Flask
+from flask import Flask, render_template
 import time
-import bs4
+
 
 app = Flask(__name__)
 
@@ -52,11 +52,11 @@ def play_game():
         elif guess == number:
             end_time = time.time() - start_time
             print("Bravo réussi en " + str(count) + " essaie et " + str(end_time) + " seconde ")
-            return
+            return render_template("test.html", name=name)
         count += 1
 
 
 play_game()
 
-if __name__ == "__projet__":
+if __name__ == "__main__":
     app.run()
