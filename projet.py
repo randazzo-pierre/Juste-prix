@@ -28,7 +28,6 @@ def play_game():
     response = requests.post("https://api.cdiscount.com/OpenApi/json/Search", data=json.dumps(params))
 
     numberO = random.randint(0, 9)
-    print(response.json())
     print(json.dumps(response.json(), indent=4))
     price = response.json()['Products'][numberO]['BestOffer']['SalePrice']
     img = response.json()['Products'][numberO]['MainImageUrl']
