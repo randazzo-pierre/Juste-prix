@@ -58,7 +58,7 @@ def play_game():
         print(img)
         print(name)
 
-        return render_template("hello.html", Price=price, Img=img, Name=name ,count=count)
+        return render_template("hello.html", Price=price, Img=img, Name=name, count=count)
 
 if __name__=='__main__':
     app.run()
