@@ -1,15 +1,23 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Juste Prix</title>
+    <title></title>
 </head>
 <h1>Le juste prix </h1>
-<h2>Hello {{ name }} </h2>
-<p> cesi est un test</p>
-<button > Jouer </button>
 
-<input>
-<h3> {{ reponse }}</h3>
+<h2>{{ Name }} <img src={{ Img }}></h2>
+
+<form action="/"  method="post">
+    <input type="text" name="guess">
+    <input type="submit" name="value">
+    <input type="hidden" name="price" value={{ Price }}>
+    <input type="hidden" name="name" value={{ Name }}>
+    <input type="hidden" name="img" value={{ Img }}>
+    <input type="hidden" name="count" value={{ count }}>
+</form>
+<h3>{{result}} </h3>
+
 </body>
 </html>
