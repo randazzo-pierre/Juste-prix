@@ -59,5 +59,5 @@ def play_game():
 
 play_game()
 
-if __name__ == "__main__":
+if __name__ == "__projet__":
     app.run()
