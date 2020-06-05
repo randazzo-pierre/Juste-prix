@@ -32,9 +32,11 @@ def play_game():
     print(json.dumps(response.json(), indent=4))
     price = response.json()['Products'][numberO]['BestOffer']['SalePrice']
     img = response.json()['Products'][numberO]['MainImageUrl']
+    name = response.json()['Products'][numberO]['Name']
 
     print(price)
     print(img)
+    print(name)
 
     start_time = time.time()
     print("le juste prix")
